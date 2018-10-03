@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Кочеткова](https://up.htmlacademy.ru/adaptive/15/user/796231).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Казанцев](https://htmlacademy.ru/profile/id24186).
 
 ---
 
