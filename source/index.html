@@ -5,8 +5,115 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="page-header__logo">PINK</a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a>Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a>HTML ACADEMY</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">PINK</h1>
+      <section class="app">
+        <img class="app__image" src="http://placehold.it/150x100" alt="Приложение PINK">
+        <div class="app__wrapper-download">
+          <a class="app__button-download">Скачать приложение</a>
+          <ul class="app__list market-list">
+            <li class="market-list__item ios">ios</li>
+            <li class="market-list__item android">android</li>
+            <li class="market-list__item windows">windows</li>
+          </ul>
+          <p class="app_availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <div class="wrapper__grey">
+        <section class="advantages">
+          <header class="advantages__header">
+            <h2 class="visually-hidden">Особенности приложения</h2>
+            <p class="advantages__intro">Устали от серости мегаполиса?</p>
+            <p class="advantages__intro">Нам есть, что Вам предложить!</p>
+          </header>
+          <ul class="advantages__list">
+            <li class="list__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="list__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="list__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <img class="advantages__app-screen" src="http://placehold.it/150x100" alt="Экран приветствия приложения">
+        </section>
+        <section class="feedbacks">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <p class="feedback__name">Николай Петров</p>
+          <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <ul class="slider">
+            <li class="slider__button--current"><span></span></li>
+            <li class="slider__button"><span></span></li>
+            <li class="slider__button"><span></span></li>
+          </ul>
+        </section>
+        <section class="prices">
+          <header class="prices__header">
+            <h2 class="visually-hidden">Тарифы</h2>
+            <h3 class="prices__name">Стандарт</h3>
+            <p class="prices__price">3,99 USD</p>
+          </header>
+          <ul class="prices__options-list">
+            <li class="options-list__item">Розовый фильтр</li>
+            <li class="options-list__item">Смайлики</li>
+            <li class="options-list__item">Комментарии</li>
+          </ul>
+          <ul class="slider">
+            <li class="slider__button"><span></span></li>
+            <li class="slider__button--current"><span></span></li>
+            <li class="slider__button"><span></span></li>
+          </ul>
+        </section>
+        <section class="contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__list-item">
+              <p class="list-item__item">Звоните:</p>
+              <p class="list-item__item-description">+7 (812) 555-66-66</p>
+            </li>
+            <li class="contacts__list-item">
+              <p class="list-item__item">Пишите:</p>
+              <p class="list-item__item-description">mail@htmlacademy.ru</p>
+            </li>
+            <li class="contacts__list-item">
+              <p class="list-item__item">Приезжайте в гости:</p>
+              <p class="list-item__item-description">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </section>
+        <section class="index-map">
+          <h2 class="visually-hidden">Карта</h2>
+          <img src="img/map.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+        </section>
+      </div>
+    </main>
   </body>
 </html>

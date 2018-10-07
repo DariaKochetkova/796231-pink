@@ -1,0 +1,128 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="page-header__logo">PINK</a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a>Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a>HTML ACADEMY</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-form">
+      <h2 class="competition-title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      <section class="competition-form">
+        <p class="competition__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="name">
+            <label for="last-name">Фамилия</label>
+            <input id="last-name" type="text" name="last-name" value="Укажите фамилию *">
+            <label for="first-name">Имя</label>
+            <input id="first-name" type="text" name="first-name" value="Введите ваше имя *">
+            <label for="middle-name">Фамилия</label>
+            <input id="middle-name" type="text" name="middle-name" value="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="trip-goals">
+            <legend class="trip-goals__title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="trip-goals__options-list">
+              <li class="trip-goals__item">
+                <input class="visually-hidden trip-goals__input trip-goals__checkbox" type="checkbox" name="selfie" id="selfie" checked>
+                <label for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="trip-goals__item">
+                <input class="visually-hidden trip-goals__input trip-goals__checkbox" type="checkbox" name="beach" id="beach" checked>
+                <label for="beach">Обгорел на пляже</label>
+              </li>
+              <li class="trip-goals__item">
+                <input class="visually-hidden trip-goals__input trip-goals__checkbox" type="checkbox" name="norris" id="norris">
+                <label for="norris">Видел Чака Норриса</label>
+              </li>
+              <li class="trip-goals__item">
+                <input class="visually-hidden trip-goals__input trip-goals__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+                <label for="souvenirs">Накупил сувениров</label>
+              </li>
+              <li class="trip-goals__item">
+                <input class="visually-hidden trip-goals__input trip-goals__checkbox" type="checkbox" name="tower" id="tower" checked>
+                <label for="towere">Удержал башню</label>
+              </li>
+              <li class="trip-goals__item">
+                <input class="visually-hidden trip-goals__input trip-goals__checkbox" type="checkbox" name="hotel" id="hotel">
+                <label for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contacts-form">
+            <label for="phone-num">Номер телефона</label>
+            <input id="phone-num" type="tel" name="phone-num" value="Номер, пожалуйста">
+            <label for="e-mail">Адрес почты</label>
+            <input id="e-mail" type="email" name="e-mail" value="Введите почту *">
+          </fieldset>
+          <fieldset class="trip-app">
+            <legend class="trip-app__title">С каким приложением путешествовали?</legend>
+            <ul class="trip-app__options-list">
+              <li class="trip-app__item">
+                <input class="visually-hidden trip-app__input trip-app__radio" type="radio" name="ios" id="ios" checked>
+                <label for="ios">Pink для iOS</label>
+              </li>
+              <li class="trip-app__item">
+                <input class="visually-hidden trip-app__input trip-app__radio" type="radio" name="android" id="android">
+                <label for="android">Pink на Android</label>
+              </li>
+              <li class="trip-app__item">
+                <input class="visually-hidden trip-app__input trip-app__radio" type="radio" name="windows" id="windows">
+                <label for="windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="comment-form">
+            <p>Опишите свои эмоции</p>
+            <textarea name="comment" id="comment-field" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </fieldset>
+        </form>
+        <button type="submit">Отпраить форму</button>
+        <p class="star">*</p>
+        <p class="fn"> - обязательные поля</p>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__logo">
+        <img class="logo__image" src="http://placehold.it/150x100" alt="Логотип Pink">
+        <a class="logo__text">PINK</a>
+      </div>
+      <div class="main-footer__social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__button twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
+          </li>
+          <li>
+            <a class="social__button facebook" href="#"><span class="visually-hidden">Фейсбук</span></a>
+          </li>
+          <li>
+            <a class="social__button youtube" href="#"><span class="visually-hidden">Ютуб</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright">
+        <p>Разработано</p>
+        <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </div>
+    </footer>
+  </body>
+</html>
