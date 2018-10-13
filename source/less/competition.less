@@ -1,0 +1,43 @@
+.competition {
+  &__intro {
+    line-height: 30px;
+  }
+  &__form {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__button {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: @white;
+    background-color: @green;
+  }
+  &__footnote {
+    line-height: 30px;
+  }
+  &__footnote sup {
+    color: @pink;
+  }
+}
+.item-type-text label,
+.item-type-contacts label,
+.item-textarea__title {
+  line-height: 30px;
+  color: @pink;
+  .uppercase;
+}
+.item-type-checkbox,
+.item-type-radio {
+  &__list {
+    .list-style;
+  }
+  background-color: @grey;
+}
+
+.item-type-checkbox legend,
+.item-type-radio legend {
+  line-height: 18px;
+  color: @pink;
+  .uppercase;
+}
