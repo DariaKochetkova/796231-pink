@@ -18,87 +18,24 @@
   color: @white
 }
 
-body {
-  margin: 0;
-  padding: 0;
-
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: @blue;
-
-  background-color: @white;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  /*background-color: @blue;*/
-  background-size: 320px 462px;
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  -webkit-clip-path: inset(100%);
-
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-@import "mobile-menu.less";
-
+@import "body.less";
+@import "visually-hidden.less";
+@import "main-nav.less";
 @import "app.less";
-
-.wrapper--grey {
-  background-color: @grey;
-}
-
+@import "wrapper";
 @import "advantages.less";
-
 @import "feedbacks.less";
-
 @import "prices.less";
-
 @import "contacts.less";
-
-.page-form {
-  background-color: @white;
-  &__title {
-    .title;
-  }
-}
-
+@import "page-form.less";
 @import "competition.less";
-
+@import "item-type-text.less";
+@import "item-type-checkbox.less";
+@import "item-type-contacts.less";
+@import "item-type-radio.less";
+@import "item-textarea.less";
 @import "main-footer.less";
-
-.page-photo {
-  background-color: @white;
-  &__title {
-    .title;
-  }
-}
-
+@import "copyright.less";
+@import "page-photo.less";
 @import "photo.less";
-
 @import "post.less";
