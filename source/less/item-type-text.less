@@ -1,5 +1,39 @@
+.item-type-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .item-type-text label {
   line-height: 30px;
   color: @pink;
   .uppercase;
+  margin-left: 23px;
+  margin-bottom: 10px;
+}
+
+.item-type-text__input {
+  width: 276px;
+  height: 60px;
+  padding: 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .item-type-text {
+    order: 1;
+  }
+  .item-type-text__container {
+    display: flex;
+    align-items: baseline;
+  }
+  .item-type-text label {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  .item-type-text__input {
+    margin-bottom: 50px;
+    flex-grow: 1;
+  }
 }

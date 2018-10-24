@@ -1,11 +1,36 @@
 .item-type-checkbox {
   background-color: @grey;
+  padding: 40px 20px;
 }
+
 .item-type-checkbox__list {
-  .list-style;
+  .reset-list;
 }
+
 .item-type-checkbox legend {
   line-height: 18px;
   color: @pink;
   .uppercase;
+  text-align: center;
+}
+
+.item-type-checkbox__item {
+  margin-left: 70px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: @tablet-width) {
+  .item-type-checkbox {
+    order: 4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .item-type-checkbox {
+    width: 100%;
+  }
+  .item-type-checkbox__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

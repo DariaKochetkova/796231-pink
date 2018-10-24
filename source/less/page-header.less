@@ -1,0 +1,21 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  background-color: @blue;
+
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}

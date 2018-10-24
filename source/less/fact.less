@@ -1,0 +1,37 @@
+.fact {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .fact {
+    background: @white;
+
+    display: flex;
+    padding: 0 20px;
+  }
+  .fact__container {
+    width: 50%;
+    &--text {
+      text-align: left;
+    }
+  }
+  .fact__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: @black;
+  }
+  .fact__link {
+    color: @pink;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fact__container--pic {
+    width: 40%;
+  }
+  .fact__container--text {
+    width: 60%;
+  }
+}

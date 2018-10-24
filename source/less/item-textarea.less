@@ -2,4 +2,33 @@
   line-height: 30px;
   color: @pink;
   .uppercase;
+  text-align: center;
+  margin-left: 23px;
+  margin-bottom: 10px;
+}
+
+.item-textarea__text {
+  display: block;
+  width: 276px;
+  height: 196px;
+  padding: 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .item-textarea {
+    order: 5;
+    padding: 45px 58px 50px;
+  }
+  .item-textarea__text {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .item-textarea {
+    width: 100%;
+  }
 }

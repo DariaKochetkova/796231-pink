@@ -1,3 +1,29 @@
+.main-footer--index {
+  display: none;
+}
+
 .main-footer {
   background-color: @white;
+}
+
+.main-footer__social {
+  display: flex;
+}
+
+.social__list {
+  .reset-list;
+}
+
+.main-footer__copyright {
+  text-align: center;
+}
+
+.main-footer__text {
+  line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer--index {
+    display: flex;
+  }
 }
