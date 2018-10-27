@@ -1,43 +1,12 @@
 .app {
-  position: relative;
   font-weight: 300;
   color: @white;
-}
+  padding-top: 395px;
 
-@media (min-width: @desktop-width) {
-  .app {
-    margin-left: 120px;
-  }
-}
-
-.app__image {
-  margin-top: 110px;
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .app__image {
-    display: block;
-    margin-top: 74px;
-    &--desktop,
-    &--mobile {
-      display: none;
-    }
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .app__image {
-    display: block;
-    margin-top: 100px;
-    &--mobile,
-    &--tablet {
-      display: none;
-    }
-  }
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-size: 258px 286px;
+  background-position: left 109px;
+  background-repeat: no-repeat;
 }
 
 .app__wrapper {
@@ -46,28 +15,8 @@
   padding: 40px 20px 30px;
 }
 
-@media (min-width: @tablet-width) {
-  .app__wrapper {
-    position: absolute;
-    top: 0;
-    width: 300px;
-    background-color: transparent;
-  }
-}
-
 .app__intro {
   display: none;
-}
-
-@media (min-width: @tablet-width) {
-  .app__intro {
-    display: block;
-    .title;
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 50px;
-    padding: 0 55px;
-  }
 }
 
 .app__button {
@@ -82,12 +31,6 @@
   background-color: transparent;
 }
 
-@media (min-width: @tablet-width) {
-  .app__button {
-    padding: 13px 45px;
-  }
-}
-
 .app__list {
   .reset-list;
   display: flex;
@@ -97,7 +40,45 @@
 }
 
 @media (min-width: @tablet-width) {
+  .app {
+    padding-top: 0;
+    width: 620px;
+    margin: 0 auto;
+    padding: 100px 0 110px;
+
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-size: 700px 545px;
+    background-position: -40px 74px;
+    background-repeat: no-repeat;
+  }
+  .app__wrapper {
+    width: 300px;
+    background-color: transparent;
+  }
+  .app__intro {
+    display: block;
+    .title;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 55px;
+  }
+  .app__button {
+    padding: 13px 45px;
+  }
   .app__availability {
     font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app {
+    width: 940px;
+    padding: 115px 0 120px;
+
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-size: 1050px 645px;
+    background-position: 15px 100px;
+    background-repeat: no-repeat;
   }
 }

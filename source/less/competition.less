@@ -58,13 +58,16 @@
   .competition__intro {
     display: block;
     font-size: 18px;
-    padding: 95px 39px;
+    padding: 95px 0;
+    width: 495px;
+    margin: 0 auto;
     &--mobile {
       display: none;
     }
   }
-  .competition__form {
-    padding: 0 20px;
+  .competition__container {
+    width: 620px;
+    margin: 0 auto;
   }
   .competition__form fieldset:not(.item-type-text) {
     border: 2px solid #e5e5e5;
@@ -72,29 +75,25 @@
     background-color: @white;
     margin-bottom: 62px;
   }
+  .competition__button {
+    margin: 0;
+  }
   .competition__button-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
-  .competition__button {
-    margin: 0 20px;
-  }
-  .competition__footnote {
-    margin-right: 20px;
-  }
 }
 
 @media (min-width: @desktop-width) {
+  .competition__intro {
+    width: 760px;
+  }
+  .competition__container {
+    width: 940px;
+  }
   .competition__form {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 130px;
-  }
-  .competition__button {
-    margin: 0 130px;
-  }
-  .competition__footnote {
-    margin-right: 130px;
   }
 }

@@ -2,12 +2,30 @@
   .uppercase;
 }
 
-.prices__header {
-  line-height: 30px;
-  color: @white;
+.prices__table {
+    display: table;
+    margin: 0 auto;
+    width: 620px;
+    border-collapse: collapse;
+}
 
-  background-color: @blue;
-  text-align: center;
+.prices__column-group {
+    display: table-column-group;
+    background: @white;
+}
+
+.prices__column {
+    display: table-column;
+}
+
+.prices__header {
+    display: table-header-group;
+
+    line-height: 30px;
+    color: @white;
+
+    background-color: @blue;
+    text-align: center;
 }
 
 .prices__name {
@@ -20,12 +38,28 @@
   font-weight: 300;
 }
 
-.prices__options-list {
-  .reset-list;
+.prices__content {
+    display: table-row-group;
 }
 
-.prices__options-item {
-  line-height: 30px;
+.prices__row {
+    display: table-row;
+}
+
+.prices__cell {
+    display: table-cell;
+    vertical-align: middle;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    padding: 5px;
+    &--first {
+      line-height: 30px;
+      background: @white;
+    }
+    &--hidden {
+      background-color: @grey;
+      border: none;
+    }
 }
 
 .prices__buttons {

@@ -17,10 +17,6 @@
 .photo__pic {
   display: block;
   margin: 0 auto;
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
 }
 
 .photo__wrapper {
@@ -45,6 +41,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .photo__container {
+    width: 620px;
+    margin: 0 auto;
+  }
   .photo__intro {
     font-size: 18px;
     padding: 95px 110px 78px;
@@ -53,7 +53,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 20px;
   }
   .photo__item {
     width: 300px;
@@ -62,16 +61,8 @@
     }
   }
   .photo__pic {
-    &--tablet {
-      display: block;
-    }
-    &--mobile,
-    &--desktop {
-      display: none;
-    }
     &--panorama {
       min-width: 700px;
-      margin-left: -20px;
     }
   }
   .photo__wrapper {
@@ -83,23 +74,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .photo__container {
+    width: 940px;
+  }
   .photo__intro {
     padding: 100px 350px 95px;
   }
-  .photo__list {
-    margin: 0 130px;
-  }
   .photo__pic {
-    &--desktop {
-      display: block;
-    }
-    &--mobile,
-    &--tablet {
-      display: none;
-    }
     &--panorama {
       min-width: 1200px;
-      margin-left: -130px;
     }
   }
   .photo__wrapper {
