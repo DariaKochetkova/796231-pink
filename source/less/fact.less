@@ -1,0 +1,44 @@
+.fact {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .fact {
+    background-color: @white;
+    display: block;
+  }
+  .fact__container {
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .fact__wrapper--pic {
+    width: 310px;
+  }
+  .fact__wrapper--text {
+    width: auto;
+    text-align: left;
+  }
+  .fact__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: @black;
+  }
+  .fact__link {
+    color: @pink;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fact {
+    background-color: @grey;
+  }
+  .fact__container {
+    width: 940px;
+  }
+  .fact__wrapper--pic {
+    width: 370px;
+  }
+}

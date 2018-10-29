@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -13,16 +15,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>Главная</a>
+              <a href="#">Главная</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a>Фотографии</a>
+              <a href="#">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a>Конкурс</a>
+              <a href="#">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a>HTML ACADEMY</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
@@ -31,9 +33,9 @@
     <main class="page-main">
       <h1 class="visually-hidden">PINK</h1>
       <section class="app">
-        <img class="app__image" src="http://placehold.it/150x100" alt="Приложение PINK">
-        <div class="app__wrapper-download">
-          <a class="app__button-download">Скачать приложение</a>
+        <div class="app__wrapper app__wrapper--download">
+          <p class="app__intro">Взгляните на жизнь иначе!</p>
+          <a class="app__button button--download" href="#">Скачать приложение</a>
           <ul class="app__list market-list">
             <li class="market-list__item market-list__item--ios"><a href="https://www.apple.com/ru/itunes/charts/free-apps/">ios</a></li>
             <li class="market-list__item market-list__item--android"><a href="https://play.google.com/store/apps?hl=ru">android</a></li>
@@ -47,28 +49,42 @@
           <header class="advantages__header">
             <h2 class="visually-hidden">Особенности приложения</h2>
             <p class="advantages__intro">Устали от серости мегаполиса?</p>
-            <p class="advantages__intro">Нам есть, что Вам предложить!</p>
+            <p class="advantages__intro--fixed-width">Нам есть, что Вам предложить!</p>
           </header>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <img class="advantages__app-screen" src="http://placehold.it/150x100" alt="Экран приветствия приложения">
+          <div class="advantages__wrapper">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
         </section>
+        <article class="fact">
+          <div class="fact__container">
+            <div class="fact__wrapper fact__wrapper--pic">
+              <svg></svg>
+            </div>
+            <div class="fact__wrapper fact__wrapper--text">
+              <p class="fact__title">Эффект на 24 часа!</p>
+              <p class="fact__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="fact__link" href="#">Узнать больше об исследовании</a>
+            </div>
+          </div>
+        </article>
         <section class="feedbacks">
           <h2 class="visually-hidden">Отзывы</h2>
           <p class="feedbacks__name">Николай Петров</p>
           <p class="feedbacks__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <p class="feedbacks__age">25 лет, водитель трамвая</p>
           <ul class="feedbacks__buttons">
             <li class="feedbacks__buttons-item feedbacks__buttons-item--current"></li>
             <li class="feedbacks__buttons-item"></li>
@@ -76,45 +92,106 @@
           </ul>
         </section>
         <section class="prices">
-          <header class="prices__header">
-            <h2 class="visually-hidden">Тарифы</h2>
-            <h3 class="prices__name">Стандарт</h3>
-            <p class="prices__price">3,99 USD</p>
-          </header>
-          <ul class="prices__options-list">
-            <li class="prices__options-item">Розовый фильтр</li>
-            <li class="prices__options-item">Смайлики</li>
-            <li class="prices__options-item">Комментарии</li>
-          </ul>
-          <ul class="prices__buttons">
-            <li class="prices__buttons-item"></li>
-            <li class="prices__buttons-item prices__buttons-item--current"></li>
-            <li class="prices__buttons-item"></li>
-          </ul>
+          <h2 class="visually-hidden">Тарифы</h2>
+          <div class="prices__container">
+            <div class="prices__table">
+              <div class="prices__column prices__column--first"></div>
+              <div class="prices__column-group">
+                <div class="prices__column"></div>
+                <div class="prices__column"></div>
+                <div class="prices__column"></div>
+              </div>
+              <header class="prices__header">
+                <ul class="prices__row prices__row--first">
+                  <li class="prices__cell prices__cell--hidden"></li>
+                  <li class="prices__cell">
+                    <h3 class="prices__name">База</h3>
+                    <p class="prices__price">1,99 USD</p>
+                  </li>
+                  <li class="prices__cell">
+                    <h3 class="prices__name">Стандарт</h3>
+                    <p class="prices__price">3,99 USD</p>
+                  </li>
+                  <li class="prices__cell">
+                    <h3 class="prices__name">Анлим</h3>
+                    <p class="prices__price">9,99 USD</p>
+                  </li>
+                </ul>
+              </header>
+              <div class="prices__content">
+                <ul class="prices__row">
+                  <li class="prices__cell prices__cell--first">Розовый фильтр</li>
+                  <li class="prices__cell"></li>
+                  <li class="prices__cell"></li>
+                  <li class="prices__cell"></li>
+                </ul>
+                <ul class="prices__row">
+                  <li class="prices__cell prices__cell--first">Смайлики</li>
+                  <li class="prices__cell"></li>
+                  <li class="prices__cell"></li>
+                  <li class="prices__cell"></li>
+                </ul>
+                <ul class="prices__row">
+                  <li class="prices__cell prices__cell--first">Комментарии</li>
+                  <li class="prices__cell"></li>
+                  <li class="prices__cell"></li>
+                  <li class="prices__cell"></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="prices__buttons">
+              <li class="prices__buttons-item"></li>
+              <li class="prices__buttons-item prices__buttons-item--current"></li>
+              <li class="prices__buttons-item"></li>
+            </ul>
+          </div>
         </section>
         <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
-          <ul class="contacts__list">
-            <li class="contacts__list-item">
-              <p class="contacts__item-intro">Звоните:</p>
-              <p class="contacts__item-description">+7 (812) 555-66-66</p>
-            </li>
-            <li class="contacts__list-item">
-              <p class="contacts__item-intro">Пишите:</p>
-              <p class="contacts__item-description">mail@htmlacademy.ru</p>
-            </li>
-            <li class="contacts__list-item">
-              <p class="contacts__item-intro">Приезжайте в гости:</p>
-              <p class="contacts__item-description">ул. Большая Конюшенная, 19/8</p>
-            </li>
-          </ul>
-        </section>
-        <section class="index-map">
-          <h2 class="visually-hidden">Карта</h2>
-          <img src="img/map.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+          <div class="contacts__container">
+            <div class="contacts__wrapper">
+              <h2 class="visually-hidden">Контакты</h2>
+              <p class="contacts__intro">Остались вопросы?<br>Свяжитесь с нами!</p>
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__item--first">
+                  <p class="contacts__item-intro">Звоните:</p>
+                  <p class="contacts__item-description">+7 (812) 555-66-66</p>
+                </li>
+                <li class="contacts__item contacts__item--last">
+                  <p class="contacts__item-intro">Пишите:</p>
+                  <p class="contacts__item-description">mail@htmlacademy.ru</p>
+                </li>
+                <li class="contacts__item contacts__item--middle">
+                  <p class="contacts__item-intro">Приезжайте в гости:</p>
+                  <p class="contacts__item-description">ул. Большая Конюшенная, 19/8</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </div>
+      <footer class="main-footer main-footer--index">
+        <div class="main-footer__logo logo">
+          <img class="logo__image" src="http://placehold.it/150x100" alt="Логотип Pink">
+          <a class="logo__text href="#"">PINK</a>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__button social__button--twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__button social__button--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__button social__button--youtube" href="#"><span class="visually-hidden">Ютуб</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

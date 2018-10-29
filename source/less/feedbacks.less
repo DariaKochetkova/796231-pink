@@ -1,12 +1,50 @@
 .feedbacks {
   background-color: @white;
+  text-align: center;
 }
+
 .feedbacks__name {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-    color: @black;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: @black;
 }
+
 .feedbacks__text {
-    line-height: 30px;
+  line-height: 30px;
+}
+
+.feedbacks__buttons {
+  .reset-list;
+  display: flex;
+}
+
+.feedbacks__age {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .feedbacks {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .feedbacks__name {
+    font-size: 20px;
+  }
+  .feedbacks__text {
+    font-size: 18px;
+    order: -1;
+    width: 620px;
+    margin: 0 auto;
+  }
+  .feedbacks__age {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedbacks__name {
+    font-size: 24px;
+  }
 }

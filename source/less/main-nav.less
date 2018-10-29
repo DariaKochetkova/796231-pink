@@ -5,12 +5,36 @@
   color: @white;
   .uppercase;
 
-  background-color: @blue;
+  height: 325px;
 }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
+  .reset-list;
+}
 
-  .list-style;
+.site-list__item {
+  text-align: center;
+}
+
+.site-list__item a {
+    color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    height: 365px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    display: flex;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+    height: 110px;
+  }
+  .site-list {
+    display: flex;
+  }
 }

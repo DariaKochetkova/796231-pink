@@ -1,11 +1,25 @@
 .item-type-radio {
   background-color: @grey;
 }
+
 .item-type-radio__list {
-  .list-style;
+  .reset-list;
 }
+
 .item-type-radio legend {
   line-height: 18px;
   color: @pink;
   .uppercase;
+  text-align: center;
+}
+
+.item-type-radio__item {
+  margin-left: 70px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: @tablet-width) {
+  .item-type-radio {
+    order: 2;
+  }
 }
