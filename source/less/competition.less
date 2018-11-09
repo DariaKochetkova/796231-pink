@@ -8,9 +8,10 @@
   display: none;
   line-height: 30px;
   text-align: center;
+
   &--mobile {
     display: block;
-    padding: 30px 22px;
+    padding: 46px 22px 28px;
   }
 }
 
@@ -33,18 +34,20 @@
   .uppercase;
   color: @white;
   background-color: @green;
-  padding: 20px 27px;
+  padding: 17px 27px;
   border: none;
   width: 280px;
-  margin: 40px 20px;
+  margin: 20px 20px 35px;
 }
 
 .competition__footnote {
+  font-size: 14px;
   line-height: 30px;
   .uppercase;
   display: block;
   text-align: center;
   margin-bottom: 50px;
+
   &--desktop {
     display: none;
   }
@@ -58,42 +61,64 @@
   .competition__intro {
     display: block;
     font-size: 18px;
-    padding: 95px 0;
+    padding: 93px 0 65px;
     width: 495px;
     margin: 0 auto;
+
     &--mobile {
       display: none;
     }
   }
-  .competition__container {
-    width: 620px;
-    margin: 0 auto;
+
+  .competition__form {
+    width: 100%;
+    margin-bottom: 4px;
   }
+
   .competition__form fieldset:not(.item-type-text) {
     border: 2px solid #e5e5e5;
     border-radius: 2px;
     background-color: @white;
     margin-bottom: 62px;
   }
+
   .competition__button {
     margin: 0;
+    padding: 17px 57px;
+    width: auto;
   }
+
   .competition__button-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    width: 620px;
+    margin-bottom: 12px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .competition__intro {
     width: 760px;
+    padding-bottom: 77px;
   }
-  .competition__container {
-    width: 940px;
-  }
+
   .competition__form {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .competition__button-wrapper {
+    width: 940px;
+    margin-bottom: 0;
+  }
+
+  .competition__footnote {
+    display: none;
+    margin-bottom: 0;
+
+    &--desktop {
+      display: block ;
+    }
   }
 }

@@ -4,27 +4,46 @@
 
 @media (min-width: @tablet-width) {
   .fact {
+    position: relative;
     background-color: @white;
     display: block;
+    padding: 97px 20px;
+
+    &::before {
+      content: "24";
+      font-size: 40px;
+      text-align: center;
+      color: @pink;
+      position: absolute;
+      top: 58px;
+      left: 20px;
+
+      width: 298px;
+      height: 345px;
+      background-image: url(../img/icon-timer.svg);
+      background-repeat: no-repeat;
+      background-size: 80%;
+    }
   }
-  .fact__container {
-    width: 620px;
-    margin: 0 auto;
-    display: flex;
-  }
-  .fact__wrapper--pic {
-    width: 310px;
-  }
-  .fact__wrapper--text {
-    width: auto;
+
+  .fact__wrapper {
+    width: 290px;
     text-align: left;
+    margin-left: 310px;
   }
+
   .fact__title {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     color: @black;
+    margin-bottom: 10px;
   }
+
+  .fact__text {
+    margin-bottom: 10px;
+  }
+
   .fact__link {
     color: @pink;
     text-decoration: underline;
@@ -34,11 +53,37 @@
 @media (min-width: @desktop-width) {
   .fact {
     background-color: @grey;
+    padding: 92px 0 112px;
+
+    &::before {
+      top: 0;
+      left: 130px;
+      background-size: 100%;
+    }
   }
-  .fact__container {
-    width: 940px;
+
+  .fact__wrapper {
+    width: 570px;
+    margin-left: 367px;
   }
-  .fact__wrapper--pic {
-    width: 370px;
+
+  .fact__title {
+    margin-bottom: 20px;
+  }
+
+  .fact__title br {
+    display: none;
+  }
+
+  .fact__text {
+    font-size: 18px;
+    line-height: 30px;
+    width: 530px;
+    margin-bottom: 32px;
+  }
+
+  .fact__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

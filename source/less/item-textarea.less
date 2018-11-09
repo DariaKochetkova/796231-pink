@@ -1,17 +1,22 @@
+.item-textarea {
+  padding-top: 40px;
+}
+
 .item-textarea__title {
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 15px;
   color: @pink;
   .uppercase;
   text-align: center;
-  margin-left: 23px;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 
 .item-textarea__text {
+  line-height: 30px;
   display: block;
   width: 276px;
-  height: 196px;
-  padding: 20px;
+  height: 200px;
+  padding: 15px 20px;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   margin: 0 auto;
@@ -21,14 +26,36 @@
   .item-textarea {
     order: 5;
     padding: 45px 58px 50px;
+    position: relative;
+    margin-top: 3px;
   }
+
+  .item-textarea__title {
+    position: absolute;
+    background-color: @white;
+    padding: 0 35px;
+    top: -9px;
+    left: 180px;
+  }
+
   .item-textarea__text {
     width: 100%;
+    padding: 15px 17px;
+    height: 194px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .item-textarea {
     width: 100%;
+    padding-bottom: 45px;
+  }
+
+  .item-textarea__title {
+    left: 342px;
+  }
+
+  .item-textarea__text {
+    height: 126px;
   }
 }

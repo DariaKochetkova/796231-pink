@@ -1,10 +1,28 @@
 .page-photo {
   background-color: @white;
+  padding-bottom: 20px;
 }
 
 .page-photo__title {
   .title;
-  padding: 30px 68px 50px;
+  padding: 97px 68px 83px;
   text-align: center;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-photo {
+    padding-bottom: 0;
+  }
+
+  .page-photo__title {
+    font-size: 50px;
+    padding: 180px 100px 139px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-photo__title {
+    padding: 174px 300px 100px;
+  }
 }

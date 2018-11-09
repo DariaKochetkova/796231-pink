@@ -2,20 +2,49 @@
   text-align: center;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-size: 320px 645px;
-  background-position: center top;
+  background-position: center -34px;
   background-repeat: no-repeat;
   padding-bottom: 200px;
   background-color: @white;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 106px;
+    left: 0;
+
+    width: 320px;
+    height: 94px;
+    background-image: url(../img/bg-triangle-white-footer.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 70px;
+    left: 142px;
+
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/icon-map-marker.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 }
 
 .contacts__intro {
   font-size: 24px;
-  line-height: normal;
+  line-height: 1.2em;
   font-weight: 300;
+  margin-bottom: 27px;
 }
 
 .contacts__wrapper {
   background: @white;
+  padding: 42px 0 21px;
 }
 
 .contacts__list {
@@ -27,6 +56,7 @@
 .contacts__item {
   flex-grow: 1;
   padding: 10px 20px;
+  margin-bottom: 3px;
 }
 
 .contacts__item-intro,
@@ -37,7 +67,7 @@
 
 .contacts__item-intro {
   font-size: 18px;
-  line-height: normal;
+  line-height: 1.2em;
   font-weight: 700;
 }
 
@@ -51,22 +81,57 @@
 @media (min-width: @tablet-width) {
   .contacts {
     background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: -20px 59px;
     background-size: 700px 848px;
     padding-bottom: 373px;
     overflow: hidden;
+
+    &::before {
+      bottom: 280px;
+
+      width: 660px;
+      background-image: url(../img/bg-triangle-white-footer.svg);
+    }
+
+    &::after {
+      bottom: 145px;
+      left: 312px;
+    }
   }
-  .contacts__container {
-    background-color: @white;
-  }
+
   .contacts__wrapper {
-    width: 620px;
-    margin: 0 auto;
+    background-color: @white;
+    padding: 46px 0 15px;
   }
+
   .contacts__intro {
-    font-size: 50px;
+    font-size: 40px;
+    min-width: 620px;
+    margin-bottom: 35px;
   }
+
   .contacts__list {
     justify-content: space-between;
+  }
+
+  .contacts__item {
+    margin-bottom: 27px;
+
+    &--first {
+      margin-right: 20px;
+    }
+
+    &--last {
+      margin-left: 20px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__item-intro {
+    margin-bottom: 3px;
   }
 }
 
@@ -74,21 +139,53 @@
   .contacts {
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-size: 1200px 976px;
-    padding-bottom: 500px;
+    background-position: 1px 88px;
+    padding-bottom: 501px;
+
+    &::before {
+      bottom: 371px;
+
+      width: 1200px;
+      height: 130px;
+    }
+
+    &::after {
+      bottom: 202px;
+      left: 582px;
+    }
   }
+
   .contacts__wrapper {
+    padding: 64px 0 5px;
+  }
+
+  .contacts__intro {
+    font-size: 50px;
+    min-width: 940px;
+    margin-bottom: 46px;
+  }
+
+  .contacts__list {
     width: 940px;
   }
+
   .contacts__item {
-    padding: 10px 30px;
+    padding: 10px 20px;
+
     &--first {
       order: 1;
     }
+
     &--middle {
       order: 2;
     }
+
     &--last {
       order: 3;
     }
+  }
+
+  .contacts__item-intro {
+    margin-bottom: 23px;
   }
 }
